@@ -1,0 +1,11 @@
+# Optional alternative to the .cmd scripts:
+#   docker compose up -d          → build + start Laya on :8000
+#   docker compose down           → stop it
+services:
+  laya:
+    build: ./laya
+    image: laya-engine:latest
+    container_name: laya
+    ports:
+      - "8000:8000"
+    restart: unless-stopped

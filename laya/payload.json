@@ -1,0 +1,32 @@
+{
+  "engine": "system-1",
+  "state": {
+    "domain": "psx_equities",
+    "asset": { "symbol": "OGDC", "market": "PSX", "sector": "E&P" },
+    "temporal": { "post_age_s": 120, "captured_at": "2026-10-24T18:00:00+0500" },
+    "author": { "als": 0.72, "source": "reddit" }
+  },
+  "questions": [
+    {
+      "id": "directional_bias",
+      "type": "choice",
+      "options": ["bullish", "bearish", "neutral"],
+      "prompt": "Classify the directional bias of this post toward the asset strictly as one of: bullish, bearish, neutral."
+    },
+    {
+      "id": "institutional_relevance",
+      "type": "noul",
+      "prompt": "Does this post provide credible analytical insight an institutional desk would act on — as opposed to meme hype or spam? Return the probability in [0,1]."
+    },
+    {
+      "id": "urgency_score",
+      "type": "score",
+      "scale": ["low", "moderate", "critical"],
+      "prompt": "Rate the information urgency for an institutional desk as one of: low, moderate, critical."
+    }
+  ],
+  "input": {
+    "text": "OGDC announces record profit with margin expansion and declares a dividend payout, EPS growth visible in the quarterly results.",
+    "url": ""
+  }
+}

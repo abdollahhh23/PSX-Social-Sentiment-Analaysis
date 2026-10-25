@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.db
+.streamlit/secrets.toml
+config.bat
+node_modules
