@@ -26,7 +26,6 @@ PURE WHITE text; green/red reserved strictly for bullish/bearish semantics.
 
 from __future__ import annotations
 
-import utils.session
 import os
 import subprocess
 import sys
